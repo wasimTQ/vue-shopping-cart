@@ -14,7 +14,7 @@ const router = new VueRouter({
     { path: '/', component: Home },
     { path: '/shop', component: Shop },
   ],
-  mode: 'hash'
+  mode: 'history'
 });
 
 
