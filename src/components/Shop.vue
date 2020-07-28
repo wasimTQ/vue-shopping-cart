@@ -6,8 +6,27 @@
             </div>
         </transition>
         <div class="toggleCart">
-            <img id="show" v-if="!showCart" @click="showCart = true" src="../assets/cart.svg" alt="">
-            <img id="hide" v-else @click="showCart = false" src="../assets/closebtn.svg" alt="">
+            
+            <svg id="show" v-if="!showCart" @click="showCart = true" xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102">
+            <g id="Group_3" data-name="Group 3" transform="translate(-1711 -58)">
+                <circle id="Ellipse_7" data-name="Ellipse 7" cx="51" cy="51" r="51" transform="translate(1711 58)" fill="#b13aec"/>
+                <g id="iconfinder_shopping_bag_172551" transform="translate(1740 87)">
+                <path id="Path_2039" data-name="Path 2039" d="M7.52,14,4,44.8H40.96L37.44,14Z" transform="translate(-0.48 -1.68)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+                <rect id="Rectangle_65" data-name="Rectangle 65" width="44" height="44" fill="none"/>
+                <path id="Path_2040" data-name="Path 2040" d="M31.84,16.96V9.92A7.92,7.92,0,0,0,16,9.92v7.04" transform="translate(-1.92 -0.24)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="4"/>
+                <circle id="Ellipse_5" data-name="Ellipse 5" cx="1.5" cy="1.5" r="1.5" transform="translate(28 15)" fill="#fff"/>
+                <circle id="Ellipse_6" data-name="Ellipse 6" cx="1.5" cy="1.5" r="1.5" transform="translate(13 15)" fill="#fff"/>
+                </g>
+            </g>
+            </svg>
+            <svg id="hide" v-else @click="showCart = false" xmlns="http://www.w3.org/2000/svg" width="102" height="102" viewBox="0 0 102 102">
+            <g id="Group_4" data-name="Group 4" transform="translate(-1484 -58)">
+                <circle id="Ellipse_7" data-name="Ellipse 7" cx="51" cy="51" r="51" transform="translate(1484 58)" fill="#ec9d26"/>
+                <line id="Line_5" data-name="Line 5" x2="39.5" y2="39.5" transform="translate(1515 89)" fill="none" stroke="#fff" stroke-width="5"/>
+                <line id="Line_6" data-name="Line 6" x1="39.5" y2="39.5" transform="translate(1515 89)" fill="none" stroke="#fff" stroke-width="5"/>
+            </g>
+            </svg>
+            
         </div>
         <div @click="showCart = false" v-if="showCart" id="overlay"></div>
         <div class="product-wrapper">
@@ -16,7 +35,7 @@
                 <div class="img">
                     
                     <!-- <img :src="'dist/'+product.img+'_P_PDP.jpg'" /> -->
-                    <img :src="'../../public/img/'+product.img+'_P_PDP.jpg'" />
+                    <img :src="'./static/'+product.img+'_P_PDP.jpg'" />
                     <!-- <img :src="'https://www.keenfootwear.com/dw/image/v2/BBCF_PRD/on/demandware.static/-/Sites-keen_catalog_master/default/'
                     +product.img+'_P_PDP.jpg?sw=350&sh=350&sm=fit'" /> -->
                     <!-- <img :src="'/img'+product.img+'.jpg'" /> -->
