@@ -1,6 +1,6 @@
 {
-  "name": "starex",
-  "description": "This is a buying and selling platform",
+  "name": "Shopping Cart",
+  "description": "Shopping cart for storing products in ecommerce",
   "version": "1.0.0",
   "author": "wasim",
   "license": "MIT",
@@ -12,6 +12,7 @@
   "dependencies": {
     "gsap": "^3.4.0",
     "vue": "^2.5.11",
+    "vue-router": "^3.3.4",
     "vuex": "^3.5.1"
   },
   "browserslist": [
@@ -30,7 +31,6 @@
     "node-sass": "^4.5.3",
     "sass-loader": "^6.0.7",
     "vue-loader": "^13.0.5",
-    "vue-router": "^3.3.4",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
