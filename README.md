@@ -1,7 +1,8 @@
 # Shopping Cart web app with local storage and vue
 
 Uses the local storage so that user cannot lose the data when the page is refreshed.
-[live demo](https://demoshoppingcart-wt.netlify.app/#/)
+
+### See the live demo [here](https://demoshoppingcart-wt.netlify.app/#/)
 
 ## Build Setup
 
